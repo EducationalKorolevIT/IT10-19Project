@@ -1,0 +1,35 @@
+﻿<Window x:Class="reglev.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:reglev"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="lll" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="ppp" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" TextWrapping="Wrap" Text=""/>
+        <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="логин"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="пароль"/>
+        <Button Grid.ColumnSpan="4" Content="вход" Grid.Column="1" Grid.Row="3" Click="aw" />
+        <TextBlock x:Name="wlog" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="" Grid.ColumnSpan="4"/>
+
+
+    </Grid>
+</Window>
